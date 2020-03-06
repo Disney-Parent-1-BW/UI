@@ -5,9 +5,23 @@ footer {
     height: 8vh;
     background-color: #7D70FE;
 
+    @media (max-width: 500px){
+        display: flex;
+        justify-content: center;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;
         width: 45vw;
+        border: solid red 2px;
+
+        @media (max-width: 500px){
+            width: 100%;
+        }
+    }
+
+    nav a:hover{
+        color: #C4C4C4;
     }
 }

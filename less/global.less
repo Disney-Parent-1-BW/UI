@@ -9,12 +9,10 @@
   
   html, body {
     font-family: 'Roboto', sans-serif;
-    // color: @main-font-color;
   }
   
   h1, h2, h3, h4, a {
     font-family: 'Roboto', sans-serif;
-    // color: @header-font-color; // change to 'heading'
   }
   
   h1 {
@@ -31,11 +29,19 @@
     font-size: 2.5rem;
     letter-spacing: 2px;
     margin-bottom: 10%;
+
+    @media (max-width: 500px){
+      text-align: center;
+    }
   }
 
   h4{
     font-size: 1.5rem;
     letter-spacing: 2.5px;
+
+    @media (max-width: 500px){
+      font-size: 1rem;
+    }
   }
   
   p {
@@ -48,11 +54,19 @@
     letter-spacing: 5px;
     text-decoration: none;
     color: white;
-}
+
+    @media (max-width: 500px){
+      font-size: 1.5rem;
+    }
+  }
 
   #signIn a{
     font-size: 1.5rem;
     letter-spacing: 2.5px;
+
+    @media (max-width: 500px){
+      font-size: 1rem;
+    }
   }
   
   .container {
@@ -64,4 +78,11 @@
     margin-bottom: 2%;
     border-radius: 10px;
     background-color: #F7F7F7;
+
+    @media (max-width: 500px){
+      border: solid red 2px;
+      height: 405vh;
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
   }

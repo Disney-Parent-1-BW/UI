@@ -1,5 +1,65 @@
-#aboutContentHeading {
+#aboutHeading {
     position: absolute;
-    top: 45;
+    top: 60;
+    transform: translateX(222%);
     text-align: center;
+    border: solid lightgreen 2px;
+
+    @media (min-width: 1920px){
+        position: absolute;
+        top: 60;
+        transform: translateX(310%);
+        text-align: center;
+    }
 }
+
+.aboutTop {
+    .sharedContentStyle();
+    height: 80%;
+
+    .aboutCardTop {
+        .sharedCardStyle();
+        margin-top: 5%;
+    }
+}
+
+.aboutMid{
+    .sharedContentStyle();
+    height: 50%;
+
+    .aboutCardMid {
+        .sharedCardStyle();
+    }
+}
+
+.aboutBtm{
+    .sharedContentStyle();
+    height: 70%;
+
+    .aboutCardBtm {
+        .sharedCardStyle();
+    }
+}
+
+.aboutImg{
+    .sharedImgStyle();
+}
+
+.aboutCardTop:hover{
+    color: white;
+    background-color: #7D70FE;
+    opacity: 0.7;
+}
+
+.aboutCardMid:hover{
+    color: white;
+    background-color: #7D70FE;
+    opacity: 0.7;
+}
+
+.aboutCardBtm:hover{
+    color: white;
+    background-color: #7D70FE;
+    opacity: 0.7;
+}
+

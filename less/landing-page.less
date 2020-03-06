@@ -5,14 +5,29 @@
     position: relative;
     height: 60%;
 
+    @media (max-width: 500px){
+        flex-direction: column;
+        height: 170vh;
+        border: solid blue 2px;
+    }
+
     #topContentHeading {
         position: absolute;
         top: 25;
         left: 20;
+
+        @media (max-width: 500px){
+            position: absolute;
+            left: 15;
+        }
     }
 
     div {
         width: 30%;
+
+        @media (max-width: 500px){
+            width: 100%;
+        }
     }
 
     .sbCard {
@@ -25,39 +40,48 @@
     
     .sbCard {
         .sbCardStyle();
+    }
+
+    .sbCard:hover{
+        color: white;
+        background-color: #7D70FE;
+        opacity: 0.7;
     }
 }
 
-.sharedContent {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
+.btmContent {
+    .sharedContentStyle();
     height: 80%;
+
+    @media (max-width: 500px){
+        flex-direction: column;
+        height: 235vh;
+        border: solid lightgreen 2px;
+    }
 
     #sharedContentHeading {
         position: absolute;
         top: 25;
         left: 20;
+
+        @media (max-width: 500px){
+            position: absolute;
+            left: 80;
+        }
     }
 
-    div {
-        width: 30%;
-    }
-
-    p {
-        padding-left: 2%;
-    }
-
-    .sharedCard{
+    .testCard{
         .sharedCardStyle();
     }
 
-    .sharedImg {
-        border-radius: 50%;
-        width: 40%;
-        height: 50%;
-        margin-bottom: 10%;
+    .testCard:hover{
+        color: white;
+        background-color: #7D70FE;
+        opacity: 0.7;
+    }
+
+    .testImg {
+        .sharedImgStyle()
     }
 
     .button {
@@ -68,6 +92,23 @@
         border-radius: 10px;
         color: white;
         background-color: #7D70FE;
+
+        @media (max-width: 500px){
+            position: absolute;
+            bottom: 5;
+            width: 30%;
+            height: 2%;
+            border-radius: 5px;
+        }
+    }
+
+    .button:hover{
+        background-color: #C4C4C4;
+    }
+
+    .button a:hover{
+        color: black;
     }
 }
+
 
