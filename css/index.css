@@ -151,6 +151,11 @@ h2 {
   font-size: 3.2rem;
   letter-spacing: 2px;
 }
+@media (max-width: 375px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 320px) {
   h2 {
     font-size: 2.5rem;
@@ -277,6 +282,11 @@ header h1 {
     margin: 0 auto;
   }
 }
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 320px) {
   header h1 {
     font-size: 2.5rem;
@@ -317,6 +327,16 @@ header #signIn {
 @media (max-width: 500px) {
   header #signIn {
     width: 45%;
+  }
+}
+@media (max-width: 375px) {
+  header #signIn {
+    width: 50%;
+  }
+}
+@media (max-width: 320px) {
+  header #signIn {
+    width: 60%;
   }
 }
 header #signIn a:hover {
@@ -370,6 +390,11 @@ footer nav a:hover {
 @media (max-width: 500px) {
   .topContent #topContentHeading {
     left: 15;
+  }
+}
+@media (max-width: 375px) {
+  .topContent #topContentHeading {
+    left: 30;
   }
 }
 @media (max-width: 320px) {
@@ -470,6 +495,14 @@ footer nav a:hover {
     left: 80;
   }
 }
+@media (max-width: 375px) {
+  .btmContent #sharedContentHeading {
+    top: 0;
+    left: 35;
+    width: 80%;
+    text-align: center;
+  }
+}
 @media (max-width: 320px) {
   .btmContent #sharedContentHeading {
     width: 80%;
@@ -526,6 +559,11 @@ footer nav a:hover {
     border-radius: 5px;
   }
 }
+@media (max-width: 375px) {
+  .btmContent .button {
+    width: 40%;
+  }
+}
 @media (max-width: 320px) {
   .btmContent .button {
     width: 40%;
@@ -556,9 +594,13 @@ footer nav a:hover {
     width: 70%;
   }
 }
+@media (max-width: 375px) {
+  #aboutHeading {
+    right: 575;
+  }
+}
 @media (max-width: 320px) {
   #aboutHeading {
-    border: solid red 1px;
     right: 495;
   }
 }
