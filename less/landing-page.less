@@ -5,10 +5,9 @@
     position: relative;
     height: 60%;
 
-    @media (max-width: 500px){
+    @media @phone{
         flex-direction: column;
         height: 170vh;
-        border: solid blue 2px;
     }
 
     #topContentHeading {
@@ -16,7 +15,7 @@
         top: 25;
         left: 20;
 
-        @media (max-width: 500px){
+        @media @phone{
             position: absolute;
             left: 15;
         }
@@ -25,7 +24,7 @@
     div {
         width: 30%;
 
-        @media (max-width: 500px){
+        @media @phone{
             width: 100%;
         }
     }
@@ -44,7 +43,7 @@
 
     .sbCard:hover{
         color: white;
-        background-color: #7D70FE;
+        background-color: @hover-card;
         opacity: 0.7;
     }
 }
@@ -53,10 +52,9 @@
     .sharedContentStyle();
     height: 80%;
 
-    @media (max-width: 500px){
+    @media @phone{
         flex-direction: column;
         height: 235vh;
-        border: solid lightgreen 2px;
     }
 
     #sharedContentHeading {
@@ -64,7 +62,7 @@
         top: 25;
         left: 20;
 
-        @media (max-width: 500px){
+        @media @phone{
             position: absolute;
             left: 80;
         }
@@ -76,7 +74,7 @@
 
     .testCard:hover{
         color: white;
-        background-color: #7D70FE;
+        background-color: @hover-card;
         opacity: 0.7;
     }
 
@@ -91,11 +89,12 @@
         height: 7%;
         border-radius: 10px;
         color: white;
-        background-color: #7D70FE;
+        background-color: @button-color;
+        border: none;
 
-        @media (max-width: 500px){
+        @media @phone{
             position: absolute;
-            bottom: 5;
+            bottom: 30;
             width: 30%;
             height: 2%;
             border-radius: 5px;

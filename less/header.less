@@ -2,13 +2,13 @@ header {
     display: flex;
     align-items: baseline;
     height: 20vh;
-    background-color: #F83E49;
+    background-color: @header-background;
 
-    @media (max-width: 500px){
+    @media @phone{
         flex-direction: column;
-        justify-content: flex-end;
-        align-content: center;
-        height: 40vh;
+        justify-content: space-between;
+        align-items: center;
+        height: 50vh;
     }
 
     .logo {
@@ -18,11 +18,11 @@ header {
         border-radius: 5%;
         background-color: white;
 
-        @media (max-width: 500px){
-            height: 50%;
+        @media @phone{
+            height: 25vh;
             margin: 0 auto;
+            margin-top: 30%;
             background-color: white;
-            border: solid pink 2px;
         }
      }
 
@@ -33,18 +33,11 @@ header {
          color: white;
          text-transform: uppercase;
          text-align: center;
-        //  border: solid lightgreen 2px;
 
-         @media (min-width: 1920px){
-            //  text-align: center;
-             border: solid lightgreen 2px;
-         }
-
-         @media (max-width: 500px){
+         @media @phone{
              width: 100%;
-             font-size: 4rem;
+             font-size: 3.5rem;
              margin: 0 auto;
-             border: solid lightgreen 2px;
          }
 
      }
@@ -54,11 +47,12 @@ header {
          justify-content: space-between;
          width: 45vw;
          margin-left: 20%;
-         border: solid blue 2px;
 
-         @media (max-width: 500px){
-            width: 100%;
+         @media @phone{
+            width: 100vw;
             margin: 0 auto;
+            padding-left: 1%;
+            padding-left: 1%;
          }
      }
 
@@ -76,13 +70,12 @@ header {
         margin-right: 5%;
         color: white;
 
-        @media (min-width: 1920px){
+        @media @large-screen{
             width: 13%;
         }
 
-        @media (max-width: 500px){
+        @media @phone{
             width: 45%;
-            border: solid blue 1px;
         }
     }
 

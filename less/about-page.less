@@ -3,19 +3,30 @@
     top: 60;
     transform: translateX(222%);
     text-align: center;
-    border: solid lightgreen 2px;
 
-    @media (min-width: 1920px){
+    @media @large-screen{
         position: absolute;
-        top: 60;
-        transform: translateX(310%);
-        text-align: center;
+        left: 200;
+        top: 80;
+    }
+
+    @media @phone{
+        position: absolute;
+        right: 640;
+        top: 30;
+        width: 70%;
     }
 }
 
 .aboutTop {
     .sharedContentStyle();
     height: 80%;
+
+    @media @phone{
+        display: flex;
+        flex-direction: column;
+        height: 235vh;
+    }
 
     .aboutCardTop {
         .sharedCardStyle();
@@ -27,6 +38,12 @@
     .sharedContentStyle();
     height: 50%;
 
+    @media @phone{
+        display: flex;
+        flex-direction: column;
+        height: 235vh;
+    }
+
     .aboutCardMid {
         .sharedCardStyle();
     }
@@ -35,6 +52,12 @@
 .aboutBtm{
     .sharedContentStyle();
     height: 70%;
+
+    @media @phone{
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
 
     .aboutCardBtm {
         .sharedCardStyle();
@@ -47,19 +70,18 @@
 
 .aboutCardTop:hover{
     color: white;
-    background-color: #7D70FE;
+    background-color: @hover-card;
     opacity: 0.7;
 }
 
 .aboutCardMid:hover{
     color: white;
-    background-color: #7D70FE;
+    background-color: @hover-card;
     opacity: 0.7;
 }
 
 .aboutCardBtm:hover{
     color: white;
-    background-color: #7D70FE;
+    background-color: @hover-card;
     opacity: 0.7;
 }
-

@@ -206,8 +206,24 @@ a {
 }
 @media (max-width: 500px) {
   .container {
-    border: solid red 2px;
     height: 405vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+.aboutContainer {
+  position: relative;
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  background-color: #F7F7F7;
+}
+@media (max-width: 500px) {
+  .aboutContainer {
+    height: 560vh;
     margin-top: 10%;
     margin-bottom: 10%;
   }
@@ -221,9 +237,9 @@ header {
 @media (max-width: 500px) {
   header {
     flex-direction: column;
-    justify-content: flex-end;
-    align-content: center;
-    height: 40vh;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
   }
 }
 header .logo {
@@ -235,10 +251,10 @@ header .logo {
 }
 @media (max-width: 500px) {
   header .logo {
-    height: 50%;
+    height: 25vh;
     margin: 0 auto;
+    margin-top: 30%;
     background-color: white;
-    border: solid pink 2px;
   }
 }
 header h1 {
@@ -249,17 +265,11 @@ header h1 {
   text-transform: uppercase;
   text-align: center;
 }
-@media (min-width: 1920px) {
-  header h1 {
-    border: solid lightgreen 2px;
-  }
-}
 @media (max-width: 500px) {
   header h1 {
     width: 100%;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 0 auto;
-    border: solid lightgreen 2px;
   }
 }
 header nav {
@@ -267,12 +277,12 @@ header nav {
   justify-content: space-between;
   width: 45vw;
   margin-left: 20%;
-  border: solid blue 2px;
 }
 @media (max-width: 500px) {
   header nav {
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
+    padding-left: 1%;
   }
 }
 header nav a:hover {
@@ -296,7 +306,6 @@ header #signIn {
 @media (max-width: 500px) {
   header #signIn {
     width: 45%;
-    border: solid blue 1px;
   }
 }
 header #signIn a:hover {
@@ -319,11 +328,11 @@ footer nav {
   display: flex;
   justify-content: space-between;
   width: 45vw;
-  border: solid red 2px;
 }
 @media (max-width: 500px) {
   footer nav {
     width: 100%;
+    padding-left: 1%;
   }
 }
 footer nav a:hover {
@@ -340,7 +349,6 @@ footer nav a:hover {
   .topContent {
     flex-direction: column;
     height: 170vh;
-    border: solid blue 2px;
   }
 }
 .topContent #topContentHeading {
@@ -435,7 +443,6 @@ footer nav a:hover {
   .btmContent {
     flex-direction: column;
     height: 235vh;
-    border: solid lightgreen 2px;
   }
 }
 .btmContent #sharedContentHeading {
@@ -487,11 +494,12 @@ footer nav a:hover {
   border-radius: 10px;
   color: white;
   background-color: #7D70FE;
+  border: none;
 }
 @media (max-width: 500px) {
   .btmContent .button {
     position: absolute;
-    bottom: 5;
+    bottom: 30;
     width: 30%;
     height: 2%;
     border-radius: 5px;
@@ -508,14 +516,20 @@ footer nav a:hover {
   top: 60;
   transform: translateX(222%);
   text-align: center;
-  border: solid lightgreen 2px;
 }
 @media (min-width: 1920px) {
   #aboutHeading {
     position: absolute;
-    top: 60;
-    transform: translateX(310%);
-    text-align: center;
+    left: 200;
+    top: 80;
+  }
+}
+@media (max-width: 500px) {
+  #aboutHeading {
+    position: absolute;
+    right: 640;
+    top: 30;
+    width: 70%;
   }
 }
 .aboutTop {
@@ -530,6 +544,13 @@ footer nav a:hover {
 }
 .aboutTop p {
   padding-left: 2%;
+}
+@media (max-width: 500px) {
+  .aboutTop {
+    display: flex;
+    flex-direction: column;
+    height: 235vh;
+  }
 }
 .aboutTop .aboutCardTop {
   display: flex;
@@ -564,6 +585,13 @@ footer nav a:hover {
 .aboutMid p {
   padding-left: 2%;
 }
+@media (max-width: 500px) {
+  .aboutMid {
+    display: flex;
+    flex-direction: column;
+    height: 235vh;
+  }
+}
 .aboutMid .aboutCardMid {
   display: flex;
   flex-direction: column;
@@ -595,6 +623,13 @@ footer nav a:hover {
 }
 .aboutBtm p {
   padding-left: 2%;
+}
+@media (max-width: 500px) {
+  .aboutBtm {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+  }
 }
 .aboutBtm .aboutCardBtm {
   display: flex;
