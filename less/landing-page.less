@@ -16,8 +16,11 @@
         left: 20;
 
         @media @phone{
-            position: absolute;
             left: 15;
+        }
+
+        @media @small-phone{
+            left: 3;
         }
     }
 
@@ -50,6 +53,7 @@
 
 .btmContent {
     .sharedContentStyle();
+    border: solid red 1px;
     height: 80%;
 
     @media @phone{
@@ -63,8 +67,14 @@
         left: 20;
 
         @media @phone{
-            position: absolute;
             left: 80;
+        }
+
+        @media @small-phone{
+            width: 80%;
+            top: 0;
+            left: 30;
+            text-align: center;
         }
     }
 
@@ -93,11 +103,14 @@
         border: none;
 
         @media @phone{
-            position: absolute;
             bottom: 30;
             width: 30%;
             height: 2%;
             border-radius: 5px;
+        }
+
+        @media @small-phone{
+            width: 40%;
         }
     }
 

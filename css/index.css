@@ -151,6 +151,11 @@ h2 {
   font-size: 3.2rem;
   letter-spacing: 2px;
 }
+@media (max-width: 320px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
 h3 {
   font-size: 2.5rem;
   letter-spacing: 2px;
@@ -272,6 +277,12 @@ header h1 {
     margin: 0 auto;
   }
 }
+@media (max-width: 320px) {
+  header h1 {
+    font-size: 2.5rem;
+    padding-left: 6px;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -358,8 +369,12 @@ footer nav a:hover {
 }
 @media (max-width: 500px) {
   .topContent #topContentHeading {
-    position: absolute;
     left: 15;
+  }
+}
+@media (max-width: 320px) {
+  .topContent #topContentHeading {
+    left: 3;
   }
 }
 .topContent div {
@@ -431,6 +446,7 @@ footer nav a:hover {
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+  border: solid red 1px;
   height: 80%;
 }
 .btmContent div {
@@ -452,8 +468,15 @@ footer nav a:hover {
 }
 @media (max-width: 500px) {
   .btmContent #sharedContentHeading {
-    position: absolute;
     left: 80;
+  }
+}
+@media (max-width: 320px) {
+  .btmContent #sharedContentHeading {
+    width: 80%;
+    top: 0;
+    left: 30;
+    text-align: center;
   }
 }
 .btmContent .testCard {
@@ -498,11 +521,15 @@ footer nav a:hover {
 }
 @media (max-width: 500px) {
   .btmContent .button {
-    position: absolute;
     bottom: 30;
     width: 30%;
     height: 2%;
     border-radius: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .btmContent .button {
+    width: 40%;
   }
 }
 .btmContent .button:hover {
@@ -519,17 +546,21 @@ footer nav a:hover {
 }
 @media (min-width: 1920px) {
   #aboutHeading {
-    position: absolute;
     left: 200;
     top: 80;
   }
 }
 @media (max-width: 500px) {
   #aboutHeading {
-    position: absolute;
     right: 640;
     top: 30;
     width: 70%;
+  }
+}
+@media (max-width: 320px) {
+  #aboutHeading {
+    border: solid red 1px;
+    right: 495;
   }
 }
 .aboutTop {
